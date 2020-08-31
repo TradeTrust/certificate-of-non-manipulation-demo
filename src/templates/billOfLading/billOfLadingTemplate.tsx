@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./style.css";
 import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
 import { BLCertificate } from "../samples";
+import { DocumentQrCode } from "./DocumentQrCode";
 
 const borderStyle = {
   borderStyle: "solid",
@@ -236,10 +237,6 @@ const Section1 = (document: BLCertificate): JSX.Element => {
   );
 };
 
-const QrCode = ({ url, size = 250 }: { url: string; size?: number }): JSX.Element => {
-  return <img src={`https://api.qrserver.com/v1/create-qr-code/?size=${size}x${size}&data=${url}`} alt="qr-code" />;
-};
-
 export const BillOfLadingTemplate: FunctionComponent<TemplateProps<BLCertificate>> = ({ document }) => {
   const qrCodeUrl = document?.links?.self.href;
   return (
@@ -255,13 +252,7 @@ export const BillOfLadingTemplate: FunctionComponent<TemplateProps<BLCertificate
         <br />
         {Section3()}
       </div>
-      {qrCodeUrl && (
-        <div className="show-print" style={{ ...borderStyle, padding: 32 }}>
-          <QrCode url={qrCodeUrl} />
-          <div style={{ fontSize: 32, marginLeft: 64 }}>Scan the QR code with your phone camera.</div>
-          <div className="genterated-text">Automatically Generated</div>
-        </div>
-      )}
+      {qrCodeUrl && <DocumentQrCode url={qrCodeUrl} />}
     </div>
   );
 };

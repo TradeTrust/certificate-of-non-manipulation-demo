@@ -8,8 +8,10 @@
     "@govtechsg/decentralized-renderer-react-components": "^2.3.3",
     "@hot-loader/react-dom": "16.10.2",
     "@storybook/addon-knobs": "^5.2.8",
+    "@types/qrcode.react": "^1.0.1",
     "bootstrap": "4.3.1",
     "debug": "4.1.1",
+    "qrcode.react": "^1.0.0",
     "react": "16.10.2",
     "react-dom": "16.10.2",
     "react-hot-loader": "4.12.15"
