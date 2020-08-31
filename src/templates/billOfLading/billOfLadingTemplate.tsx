@@ -7,7 +7,7 @@ import { BLCertificate } from "../samples";
 const borderStyle = {
   borderStyle: "solid",
   borderWidth: 0.5,
-  borderColor: "#000"
+  borderColor: "#000",
 };
 
 const smallText = (text: string): JSX.Element => <div style={{ fontSize: "0.8em" }}>{text}</div>;
@@ -236,10 +236,8 @@ const Section1 = (document: BLCertificate): JSX.Element => {
   );
 };
 
-const QrCode = ({ url, size = 250 }: { url: string; size?: number; }): JSX.Element => {
-  return (
-    <img src={`https://api.qrserver.com/v1/create-qr-code/?size=${size}x${size}&data=${url}`} alt="qr-code" />
-  );
+const QrCode = ({ url, size = 250 }: { url: string; size?: number }): JSX.Element => {
+  return <img src={`https://api.qrserver.com/v1/create-qr-code/?size=${size}x${size}&data=${url}`} alt="qr-code" />;
 };
 
 export const BillOfLadingTemplate: FunctionComponent<TemplateProps<BLCertificate>> = ({ document }) => {
@@ -257,15 +255,13 @@ export const BillOfLadingTemplate: FunctionComponent<TemplateProps<BLCertificate
         <br />
         {Section3()}
       </div>
-      {qrCodeUrl && <div className="show-print" style={{ ...borderStyle, padding: 32 }}>
-        <QrCode url={qrCodeUrl} />
-        <div style={{ fontSize: 32, marginLeft: 64 }}>
-          Scan the QR code with your phone camera.
+      {qrCodeUrl && (
+        <div className="show-print" style={{ ...borderStyle, padding: 32 }}>
+          <QrCode url={qrCodeUrl} />
+          <div style={{ fontSize: 32, marginLeft: 64 }}>Scan the QR code with your phone camera.</div>
+          <div className="genterated-text">Automatically Generated</div>
         </div>
-        <div className="genterated-text">
-          Automatically Generated
-        </div>
-      </div>}
+      )}
     </div>
-  )
+  );
 };
