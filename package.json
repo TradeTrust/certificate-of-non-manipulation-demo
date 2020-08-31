@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "dependencies": {
-    "@govtechsg/decentralized-renderer-react-components": "^2.3.0",
+    "@govtechsg/decentralized-renderer-react-components": "^2.3.3",
     "@hot-loader/react-dom": "16.10.2",
     "@storybook/addon-knobs": "^5.2.8",
     "bootstrap": "4.3.1",
@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.6.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
     "@babel/preset-env": "7.6.3",
     "@babel/preset-react": "7.6.3",
     "@babel/preset-typescript": "7.6.0",
@@ -62,7 +63,7 @@
     "react-docgen-typescript-loader": "3.3.0",
     "semantic-release": "15.13.26",
     "style-loader": "^1.0.0",
-    "typescript": "3.6.4",
+    "typescript": "^3.7.4",
     "webpack": "4.41.2",
     "webpack-cli": "3.3.9",
     "webpack-dev-server": "3.8.2"
@@ -80,6 +81,9 @@
       ],
       "@babel/preset-typescript",
       "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-optional-chaining"
     ]
   },
   "browserslist": [
