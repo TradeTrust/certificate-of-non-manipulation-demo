@@ -9,7 +9,7 @@ interface DocumentQrCode {
 
 export const DocumentQrCode: FunctionComponent<DocumentQrCode> = ({ url }) => {
   const imageSettings: ImageSettings = {
-    src: `/static/logo-qrcode.png`,
+    src: `/static/images/logo-qrcode.png`,
     height: 90,
     width: 100,
     excavate: true,
