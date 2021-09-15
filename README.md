@@ -4,7 +4,7 @@
 
 # Decentralised Document Renderer
 
-The project allow you to run your own document renderer compatible with the OpenAttestation standards. To customise the look and feel of your document, you may style a template to render it, host a copy of this renderer and then point your document to render with the hosted renderer. 
+The project allow you to run your own document renderer compatible with the OpenAttestation standards. To customise the look and feel of your document, you may style a template to render it, host a copy of this renderer and then point your document to render with the hosted renderer.
 
 # Running the renderer
 
@@ -13,19 +13,19 @@ The project allow you to run your own document renderer compatible with the Open
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-You will notice a blank page. This is normal as the renderer does not render anything until a document object is passed into it. 
+You will notice a blank page. This is normal as the renderer does not render anything until a document object is passed into it.
 
-To see the render in action, you may embed it in an iframe and use postMessage to interact with it. 
+To see the render in action, you may embed it in an iframe and use postMessage to interact with it.
 
 A sample iframe html file is included in `test/index.html` to help you test your renderer.
 
 # Styling your document
 
-The templates are defined in `src/templates`. 
+The templates are defined in `src/templates`.
 
 ## Basic styling
 
-If you are only rendering one type of document, you may style the default template at `src/templates/default/template.js`. 
+If you are only rendering one type of document, you may style the default template at `src/templates/default/template.js`.
 
 ## Multiple document templates
 
@@ -37,3 +37,15 @@ If the renderer is meant to render more than one template, it will be differenti
 
 Builds the site into a static site.<br>
 You may serve the site from the `build` folder.
+
+### Notes
+
+The renderer at this repo is used for rendering the demo sample documents in:
+
+- https://tradetrust.io
+- https://dev.tradetrust.io
+- https://rinkeby.tradetrust.io
+
+Renderer sitting at domain name:
+
+- https://demo-cnm.openattestation.com
