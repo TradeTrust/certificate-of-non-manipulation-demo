@@ -10,9 +10,9 @@ jobs:
       - uses: actions/setup-node@v3
       - name: Clean Install
         run: npm ci
-      - name: Run lint
+      - name: Run Lint
         run: npm run lint
-      - name: Run test
+      - name: Run Test
         run: npm run test -- --passWithNoTests
       - name: Build
         run: npm run build
