@@ -2,6 +2,10 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=TradeTrust_document-renderer&metric=alert_status)](https://sonarcloud.io/dashboard?id=TradeTrust_document-renderer)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=TradeTrust_document-renderer&metric=coverage)](https://sonarcloud.io/dashboard?id=TradeTrust_document-renderer)
 
+# ⚠️ Deprecated
+
+- Refer to `CERTIFICATE_OF_NON_MANIPULATION` in [generic templates](https://github.com/TradeTrust/generic-templates) instead.
+
 # Decentralised Document Renderer
 
 The project allow you to run your own document renderer compatible with the OpenAttestation standards. To customise the look and feel of your document, you may style a template to render it, host a copy of this renderer and then point your document to render with the hosted renderer.
