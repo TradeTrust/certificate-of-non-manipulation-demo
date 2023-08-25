@@ -2,9 +2,9 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=TradeTrust_document-renderer&metric=alert_status)](https://sonarcloud.io/dashboard?id=TradeTrust_document-renderer)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=TradeTrust_document-renderer&metric=coverage)](https://sonarcloud.io/dashboard?id=TradeTrust_document-renderer)
 
-# Deprecated ⚠️
+# ⚠️ Deprecated
 
-- Refer to [generic templates](https://github.com/TradeTrust/generic-templates) instead.
+- Refer to `CERTIFICATE_OF_NON_MANIPULATION` in [generic templates](https://github.com/TradeTrust/generic-templates) instead.
 
 # Decentralised Document Renderer
 
